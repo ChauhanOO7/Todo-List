@@ -1,0 +1,170 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("../static/images/1489354.jpg");
+    background-size: cover;
+}
+
+.navhome
+{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.navhome > h1
+{
+    color: white;
+    padding-left: 1rem;
+}
+
+.navhome > ul{
+    width: 7%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.forall{
+
+    background-color: rgba(0, 0, 0, 0.171);
+    margin-top: 7rem;
+    margin-left: 33rem;
+    width: 25%;
+    height: 45%;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+.forall > div
+{
+    margin-bottom: 4rem;
+    height: 3.5rem;
+    
+}
+
+.forall > a > button
+{
+    width: 40%;
+    height: 3rem;
+    font-size: 1.1em;
+    font-weight: 1000;
+    margin-left: 1.4rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.sig{
+    background-color: black;
+    color: white;
+}
+
+
+.navhomelogin{
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    position: static;
+}
+
+.navhomelogin > ul{
+    width: 7%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navhomelogin > button{
+    margin-left: 67rem;
+    margin-top: 0.6rem;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.navhomelogin > h1
+{
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-top: 0;
+    color: white;
+}
+
+.userlist{
+
+    list-style: none;
+    color: white;
+    width: 40%;
+    font-size: 1.5em;
+    font-weight: 1000;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 2rem;
+    margin-top: 3rem;
+    margin-left: 26rem;
+    padding-top: 1rem;
+}
+
+.userlist > li
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.userlist > li > label
+{
+    margin-right: 2rem;
+}
+
+.userlist > li > img
+{
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+form
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 23rem;
+}
+
+form > input
+{
+    width: 27rem;
+    height: 3rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+
+form > button
+{
+    width: 10rem;
+    border-radius: 2rem;
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+::placeholder
+{
+    padding-left: 1rem;
+    font-size: 1.2em;
+}

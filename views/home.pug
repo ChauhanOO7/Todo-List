@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        title Todo List
+        style
+            include ../static/home.css
+    body
+
+        if check===1
+            nav.navhome
+                h1  Todo List
+                ul 
+                    li: a(href="/") Home
+                    li: a(href="/about") About
+
+            div.forall
+                div
+                a(href="/login"): button Login
+                a(href="/signup"): button.sig Signup
+        else
+            nav.navhomelogin
+                h1  Todo List
+                ul 
+                    li: a(href="/") Home
+                    li: a(href="/about") About
+                button(id="log") Logout    
+            ul.userlist
+                for n in added 
+                    li
+                        label(for=`${n._id}`)= n.task
+                        img(src="../static/images/trash.png",id=`${n._id}`,width=32,height=32)
+            form(action="/add",method="post")
+                input(type="text",name="task_name",id="my",placeholder="Enter the Task...")
+                button Add Task
+
+
+
+
+
+
+        script
+            include ../static/index.js

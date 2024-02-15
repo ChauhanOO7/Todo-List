@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title Sign up page
+        style
+            include ../static/sign.css
+    body
+        div.signup
+            h1 Register Here
+            form(action="/signup",method="post")
+                input(type="text",name="name",placeholder="Full Name")
+                input(type="text",name="email",placeholder="Email" required)
+                input(type="text",name="Password",placeholder="Password" required)
+                button Signup
+        

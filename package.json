@@ -1,9 +1,10 @@
 {
-  "name": "2.-authentication-and-authorization",
+  "name": "2.todolist",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

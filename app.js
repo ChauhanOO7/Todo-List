@@ -38,6 +38,6 @@ app.use("/login",loginroute);
 app.use("/signup",signuproute);
 
 
-app.listen(port,()=>{
+app.listen(PORT,()=>{
     console.log("server is connected...");
 });

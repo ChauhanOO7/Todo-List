@@ -4,11 +4,11 @@ function checkloggedin(req,res,next){
 
     const Uid=req.cookies?.uid;
 
-    if(!Uid)    return res.render("login");
+    if(!Uid)    return res.render("loginup");
 
     const user=getUser(Uid);
 
-    if(!user)   return res.render("login");
+    if(!user)   return res.render("loginup");
 
     req.user=user;
     next();

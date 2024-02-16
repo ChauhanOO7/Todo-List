@@ -13,14 +13,13 @@ const cookieParser = require('cookie-parser');
 const staticroutes=require("./routes/staticroute");
 const loginroute=require("./routes/login");
 const signuproute=require("./routes/signup");
-const {checkloggedin}=require("./middleware/loggedin");
 
 //database connectivity
 
 mongoose.connect(database_url).then(()=>{
     console.log("database is connected...");
 }).catch((error)=>{
-    logError(error);
+    console.error(error);
 });
 
 //middlewares

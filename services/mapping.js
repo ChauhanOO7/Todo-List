@@ -11,4 +11,4 @@ function getUser(uid)
 }
 
 
-module.exports={setUser,getUser,uidanduser};
+module.exports={setUser,getUser};

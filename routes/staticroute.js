@@ -1,12 +1,13 @@
 const express=require("express");
 const router=express.Router();
 const {backtohome,edithome,deletetask,showabout}=require("../controllers/home");
+const {checkloggedin}=require("../middleware/loggedin");
 
 router.get("/",backtohome);
 
 router.get("/about",showabout);
 
-router.post("/add",edithome);
+router.post("/add",checkloggedin,edithome);
 
 router.post("/delete_task",deletetask);
 
